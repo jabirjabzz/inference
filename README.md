@@ -12,5 +12,5 @@ A Python-based tool for detecting gender references in text using NLP techniques
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/gender-inference.git
+   git clone https://github.com/jabirjabzz/gender_inference
    cd gender-inference
