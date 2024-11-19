@@ -2,13 +2,22 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tag import pos_tag
 
-# Example lexicon of caste-related terms (expand responsibly with context)
 caste_keywords = {
-    "general": ["brahmin", "kshatriya", "vaishya"],
-    "scheduled_castes": ["dalit", "sc", "st"],
-    "other_backward_classes": ["obc", "yadav", "kurmi"],
-    "tribes": ["tribal", "adivasi"],
+    "brahmins": ["namboothiri", "embrandiri", "pattar"],
+    "nairs": ["nair", "menon", "pillai", "kurup", "kartha", "panicker"],
+    "ezhava_thiyya": ["ezhava", "thiyya", "billava"],
+    "kshatriyas": ["zamorin", "raja", "nambiars", "raja nair"],
+    "obc_hindus": ["kaniyar", "ganaka", "vaniyan", "moosari", "thattan"],
+    "scheduled_castes": ["pulaya", "cheramar", "paraya", "kanakkan", "vettuva", "kurava", "chakkiliyan"],
+    "scheduled_tribes": ["kurichiya", "paniya", "irula", "kattunayakan", "adiyan", "malayarayan", "ulladan", "kanikkar"],
+    "muslims": ["mappila", "moplah", "rowther", "labbai", "sheikh", "keyi", "marakkar", "qazi", "maulavi", "alavi"],
+    "christians": [
+        "syrian orthodox", "syrian catholic", "syrian jacobite", "syrian marthomite",
+        "latin catholic", "knanaya catholic", "knanaya jacobite", "anglo-indian", 
+        "protestant", "csi", "father", "bishop", "archbishop", "reverend"
+    ]
 }
+
 
 # Function to infer caste-related terms
 def infer_caste(text):
