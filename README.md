@@ -1,4 +1,4 @@
-# Gender Inference Tool
+# All Inference Tool
 
 A Python-based tool for detecting gender references in text using NLP techniques.
 
